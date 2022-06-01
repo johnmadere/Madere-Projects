@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="en">
+
+<head><title>On Click Practice</title></head>
+
+<style>
+    body { color: white; font-weight: bold; background-image: url("sausageone.jpg"); no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+    
+</style>
+
+<body>
+
+
+    <h2>Let's Make Sausage...or maybe some hot dogs!</h2>
+
+    <p>We gone hopefully make some sausage. If not hot dogs are passable</p>
+
+    <button id="mySausage">Sausage Time, Boyeee!!!</button>
+    <br>
+    <br>
+    <button id="myHotDog">Hot dogs instead!!!</button>
+
+
+<script>
+
+document.getElementById("mySausage").addEventListener("click", newSausage);
+
+function newSausage() {
+var sausageMaker = ["Yes, it's sausage!", "Sausage for dinner? YEAH!", "Aww, sausage again???", "I love me some sausage!!!", "Didn't you invent sausage in 1947?", "Sausage ice cream for the win!"];
+var randomSausage = Math.floor(Math.random() * sausageMaker.length);
+alert (sausageMaker[randomSausage]);
+}
+
+document.getElementById("myHotDog").addEventListener("click", newHotDogMaker);
+
+function newHotDogMaker() {
+var hotDogMaker = ["I love weenies!", "Hot dogs for president 2024!", "Hot dog cereal? I'm down.", "I only drink hot dog water", "On the eighth day...hot dogs", "French people make fancy hot dogs for guests"];
+var randomHotDog = Math.floor(Math.random() * hotDogMaker.length);
+alert (hotDogMaker[randomHotDog]);
+}
+
+
+
+</script>
+
+</body>
+</html> 
