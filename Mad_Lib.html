@@ -4,40 +4,36 @@
 <head>
     
 <title>Mad Lib</title>
-
 <style>
-   body {color: green;}
-    </style>
+   body {background-color: black; color: green;}
+</style>
 
 </head>
 
 <body>
-    
+    <p id="p"></p>
+
     <script>
+        function madLib() {
+            var article = [" The ", "A ", " Your ", "Her "];
+            var noun = [" cow ", " sandwich ", " toothbrush ", " mailman ", " doctor ", " teacher ", " three-toed sloth ", " fried chicken inventor "];
+            var verb = [" ran ", " slipped ", " invented ", " prowled ", " perused ", " sauntered ", " jogged ", " skipped ", " swam ", " skateboarded ", " died "];
+            var adverb = [ " quickly", " in a hurry", " slowly", " yesterday", " with vigor", " longingly", " purposefully"," in France", " with two of their friends"];
+            var punctuation = [". ", "! ", "? "];
 
-    function madLib() {
+            var random1 = Math.floor(Math.random() * article.length);
+            var random2 = Math.floor(Math.random() * noun.length);
+            var random3 = Math.floor(Math.random() * verb.length);
+            var random4 = Math.floor(Math.random() * adverb.length);
+            var random5 = Math.floor(Math.random() * punctuation.length);
 
-    var article = [" The ", "A ", " Your ", "Her "];
-    var noun = [" cow ", " sandwich ", " toothbrush ", " mailman ", " doctor ", " teacher ", " three-toed sloth ", " fried chicken inventor "];
-    var verb = [" ran ", " slipped ", " invented ", " prowled ", " perused ", " sauntered ", " jogged ", " skipped ", " swam ", " skateboarded ", " died "];
-    var adverb = [ " quickly", " in a hurry", " slowly", " yesterday", " with vigor", " longingly", " purposefully"," in France", " with two of their friends"];
-    var punctuation = [". ", "! ", "? "];
+            var paragraph=document.getElementById("p");
+            var text = document.createTextNode((article[random1] + noun[random2] + verb[random3] + adverb[random4] + punctuation[random5]));
+            paragraph.appendChild(text);
+        };
 
-    var random1 = Math.floor(Math.random() * article.length);
-    var random2 = Math.floor(Math.random() * noun.length);
-    var random3 = Math.floor(Math.random() * verb.length);
-    var random4 = Math.floor(Math.random() * adverb.length);
-    var random5 = Math.floor(Math.random() * punctuation.length);
-
-    document.write(article[random1] + noun[random2] + verb[random3] + adverb[random4] + punctuation[random5]);
-    }
-
-    setInterval(madLib, 500);
-
-  
-
-</script>
-
+        setInterval(madLib, 500);
+    </script>
 </body>
 
 </html>
