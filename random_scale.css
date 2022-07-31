@@ -1,0 +1,84 @@
+html {
+    background-color: rgb(0, 162, 255);
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+#topborder {
+    background-color: darkgoldenrod;
+    width:fit-content;
+    height: 80px;
+    margin: auto;
+    padding: 25px;
+    padding-top: 2px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+#instructions {
+    width: 500px;
+    margin: auto;
+      
+}
+
+#Roots {
+    text-align: center;
+    
+}
+
+.rootbuttons {
+    border: 2px solid black;
+    border-radius: 4px;
+    text-align: center;
+    margin: 5px;
+    padding-bottom: 15px;
+    background-color: darkgoldenrod;
+}
+
+#rootlabel {
+    margin: auto;
+    text-align: center;
+}
+
+.qualitybuttons {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid black;
+    margin: 5px;
+    padding-bottom: 15px;
+    border-radius: 4px;
+    background-color: darkgoldenrod;
+}
+
+#randombutt {
+    margin-top: 20px;
+    margin-left: 125px;
+    text-align: center;
+   
+}
+
+#reset {
+    margin-top: 20px;
+    margin-left: 125px;
+    text-align: center;
+}
+
+#scaleoutput {
+    height: 40px;
+    margin-top: 20px;
+    width: 475px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: darkgoldenrod;
+}

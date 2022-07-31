@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <title>Random Scale Generator</title>
+<link rel="stylesheet" href="random_scale.css">
+</head>
+
+<body>
+    
+    <div id="topborder">
+        <h1>Random Scale Generator</h1>
+    </div>
+    <br>
+    <div id="instructions">Select the scale roots and qualities and then hit the "randomize" button to assign a scale.
+    <br>
+    <br>
+
+    <label for="Roots" id="rootlabel">Choose the scale root(s)</label>
+        <div class="rootbuttons">
+        <br>
+        <input value="C" name="settings" type="checkbox">C
+        <input value="F" name="settings" type="checkbox">F
+        <input value="Bb" name="settings" type="checkbox">Bb
+        <input value="Eb" name="settings" type="checkbox">Eb
+        <input value="Ab" name="settings" type="checkbox">Ab
+        <input value="Db" name="settings" type="checkbox">Db
+        <br>
+        <input value="Gb/F#" name="settings" type="checkbox">Gb/F#
+        <input value="B" name="settings" type="checkbox">B
+        <input value="E" name="settings" type="checkbox">E
+        <input value="A" name="settings" type="checkbox">A
+        <input value="D" name="settings" type="checkbox">D
+        <input value="G" name="settings" type="checkbox">G
+        <input value="C" id="select-all" name="settings" onclick="toggle(this);" type="checkbox">All scales
+    </div>
+    
+   
+<br>
+
+<label for="Major/minor" id="qualitylabel">Choose the scale quality/qualities<div class="qualitybuttons">
+    <br>
+    <input value="Major" type="checkbox" name="qsettings">Major
+    <input value="Minor" type="checkbox" name="qsettings">Minor
+    <input value="Major" id="both" onclick="toggleQual(this);" type="checkbox" name="qsettings">Both
+
+</div></label>
+<button type="button" id="randombutt">Randomize!</button><button type="button" onClick="refreshPage()" id="reset">Reset</button>
+<br>
+<br>
+
+<div id="scaleoutput">What scale will it be?</div>
+</div>
+<br>
+
+
+<script src="random_scale.js"></script>
+</body>
+</html>
